@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:background="?android:background"
+    >
+
+    <TextView
+        android:id="@+id/noteTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:textColor="?android:textColor"
+        android:textStyle="bold"
+        android:padding="3dp"
+        android:gravity="center"
+        />
+
+
+<!--    <WebView-->
+<!--        android:id="@+id/noteDetailWebView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <ScrollView
+        android:id="@+id/noteContentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="3000px"
+
+        android:layout_marginTop="1dp"
+
+        android:textColor="?android:textColor"
+        android:padding="3dp">
+
+
+        <TextView
+            android:id="@+id/noteContentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?android:textColor"
+            android:padding="1dp"
+
+            android:layout_marginTop="1dp"
+
+            android:lineSpacingExtra="5dp"
+            android:textSize="22dp"
+            />
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InkNote" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:itemBackground">@color/near_white</item>
+    </style>
+
+    <style name="Theme.InkNote" parent="Base.Theme.InkNote" />
+</resources>

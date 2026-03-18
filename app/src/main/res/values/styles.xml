@@ -1,0 +1,12 @@
+<resources>
+    <!-- 原有的 AppTheme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- 其他属性 -->
+    </style>
+
+    <!-- 定义全屏主题 -->
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

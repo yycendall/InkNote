@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:background"
+    android:textColor="?android:textColor"
+    >
+
+    <!-- 搜索输入框 -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="搜索笔记"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+        android:textColor="?android:textColor"
+        android:background="?android:background"
+        android:height="38dp"
+        android:padding="8dp" />
+
+    <!-- 笔记列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/noteListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="?android:textColor"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:layout_marginTop="40dp" /> <!-- 添加了与搜索框的间距 -->
+
+    <!-- 上下翻页按钮区域 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|end"
+        android:background="@android:color/transparent"
+        android:textColor="?android:textColor"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/buttonUp"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:background="@drawable/transparent_button_background"
+            android:padding="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:drawableEnd="@android:drawable/arrow_up_float"
+            android:gravity="center"
+            android:drawablePadding="0dp"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/buttonDown"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:background="@drawable/transparent_button_background"
+            android:padding="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="8dp"
+            android:drawableEnd="@android:drawable/arrow_down_float"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+</FrameLayout>
